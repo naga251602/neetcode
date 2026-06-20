@@ -1,0 +1,6 @@
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        c = Counter(nums)
+        return list(map(lambda x: x[0], c.most_common(k)))
+
+        
